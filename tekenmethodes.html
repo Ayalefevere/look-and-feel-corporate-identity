@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekenmethodes - Visual Thinking </title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/amj1ims.css">
+
+    <link rel="icon" type="image/png" href="images/logo-visual-thinking.svg">
+</head>
+<body>
+
+<!-- Header met logo, navigatiemenu en button icoontjes -->
+<header>
+
+    <!-- Logo. Met navigatiemenu op desktop -->
+    <div class="leftheader">
+        <a href="index.html"><img src="images/logo-visual-thinking.svg" alt="Logo Visual Thinking"></a>
+
+            <ul class="navdesktop">
+                <li class="dropdown"> 
+                    <a href="#">Oefenen
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" width="12px" aria-hidden="true"><path d="M10.914 17.799c.6.611 1.572.612 2.172 0l7.964-8.127c.6-.613.6-1.605 0-2.217l-.724-.738a1.515 1.515 0 0 0-2.172 0L12 12.997l-6.154-6.28a1.514 1.514 0 0 0-2.172 0l-.724.738a1.59 1.59 0 0 0 0 2.217z"></path></svg>
+                    </a>
+                    <!-- DROPDOWN MENU MOET NOG KOMEN VOOR DE DESKTOP -->
+                    <!-- <ul class="dropdown-menu">
+                        <li>
+                            <a href="#Tekenmethodes"> Tekenmethodes </a>
+                            <a href="#Curussen">Cursussen</a>
+                        </li>
+                    </ul>     -->
+                </li>    
+
+                <li class="dropdown"> 
+                    <a href="#">Verdiepen
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" width="12px" aria-hidden="true"><path d="M10.914 17.799c.6.611 1.572.612 2.172 0l7.964-8.127c.6-.613.6-1.605 0-2.217l-.724-.738a1.515 1.515 0 0 0-2.172 0L12 12.997l-6.154-6.28a1.514 1.514 0 0 0-2.172 0l-.724.738a1.59 1.59 0 0 0 0 2.217z"></path></svg>
+                    </a>
+                    <!-- DROPDOWN MENU MOET NOG KOMEN VOOR DE DESKTOP -->
+                    <!-- <ul class="dropdown-menu">
+                        <li>
+                            <a href="#Tekenmethodes"> Tekenmethodes </a>
+                            <a href="#Curussen">Cursussen</a>
+                        </li>
+                    </ul>                      -->
+                </li>      
+
+                <li class="dropdown"> 
+                    <a href="#Inspiratie">Inspiratie</a>
+                </li>  
+                
+                <li class="dropdown"> 
+                    <a href="#Over">Over</a>
+                </li>  
+            </ul>    
+    </div>
+
+    <!-- Icoontjes en hamburger menu op mobile -->
+    <div class="rightheader">
+        <a href="#Search"><img src="images/search_vector.svg" alt="search icon" class="headericon"></a>
+        <a href="#Profile"><img src="images/person_vector.svg" alt="person/profile icon" class="headericon"></a>
+        <a href="#Favorites"><img src="images/heart_vector.svg" alt="heart icon" class="headericon"></a>
+
+        <a href="#MateriaalIndienen" class="buttondesktop">Materiaal Indienen</a>
+
+        <!-- Hamburger menu -->
+        <button><img src="images/ham-menu-icon.svg" alt="hamburger menu"></button>
+
+        <!-- Navigatiemenu -->
+        <nav>
+            <button class="close"><img src="images/x-symbol_white.svg" alt="x sluit icon"> </button>
+
+            <div class="onderwerp">
+                <a href="index.html" class="kopje">Home </a>
+            </div>
+
+            <div class="onderwerp">
+                <p class="kopje">Oefenen </p>
+                <a href="tekenmethodes.html" class="tussenkopje">Tekenmethodes </a>
+                <a href="#Curussen" class="tussenkopje"> Curussen</a>
+            </div>
+
+            <div class="onderwerp">
+                <p class="kopje">Verdiepen </p>
+                <a href="#Kennisclips" class="tussenkopje">Kennisclips</a>
+                <a href="#Artikelen" class="tussenkopje">Artikelen</a>
+            </div>
+
+            <div class="onderwerp">
+                <a href="#Inpsiratie" class="kopje">Inspiratie </a>
+            </div>
+
+            <div class="onderwerp">
+                <a href="#Over" class="kopje">Over </a>
+            </div>
+
+            <a href="#MateriaalIndienen" class="button">Materiaal Indienen</a>
+        </nav>
+    </div>
+
+</header>
+
+<main>
+
+    <!-- Hier zie je hoe je op de huidige pagina bent gekomen   --> 
+    <p class="paginas"><a href="index.html">Home</a> > <span class="pageactive"> Tekenmethodes </span> </p>
+
+
+    <h1> Tekenmethodes </h1>
+
+    <!-- Dit is de zoekbalk met rechts een foto icoontje waar je een foto kan uploaden? Deze zoekbalk is om te zoeken op de tekenmethodes pagina   --> 
+    <form class="search">
+            <img src="images/search_vector.svg" alt="search icon grey" class="searchicon2">
+            <label><input class="search-input" type="search" placeholder="Zoeken"></label>
+            <img src="images/add_photo_blue.svg" alt="add photo icon" class="fotosearch">
+    </form>
+
+
+    <!-- Hier kun je filteren op tekenmethode   --> 
+    <button popovertarget="filter" class="filtericon"><img src="images/filter_vector.svg" alt="vector icon van filter"></button>
+    
+    <div id="filter" popover>
+    <button class="closed" popovertarget="filter" popovertargetaction="hide"><img src="images/x-symbol_blue.svg" alt="x sluit icon"></button>
+
+        <div class="filters">    
+            <div class="categorie0">
+                <a href="#"> 
+                    <img src="images/bekijk-alles.svg" alt="filter Bekijk alles">
+                    <span class="categorietekst"> Bekijk alles</span>
+                </a>
+            </div>
+
+            <div class="categorie0">
+                <a href="#"> 
+                    <img src="images/op-vraag.svg" alt="filter Op vraag">
+                    <span class="categorietekst">Op vraag</span>
+                </a>
+            </div>
+
+            <div class="categorie0">
+                <a href="#"> 
+                    <img src="images/leren-over-anderen.svg" alt="methode Leren over jezelf en reflecteren">
+                    <span class="categorietekst">Leren over jezelf en reflecteren</span>
+                </a>
+            </div>
+
+            <div class="categorie0">
+                <a href="#"> 
+                    <img src="images/onderzoeken-en-begrijpen.svg" alt="methode Onderzoeken en Begrijpen">
+                    <span class="categorietekst">Onderzoeken en begrijpen</span>
+                </a>
+            </div>
+
+            <div class="categorie0">
+                <a href="#"> 
+                    <img src="images/creatief-denken.svg" alt="methode Creatief denken">
+                    <span class="categorietekst">Creatief denken</span>
+                </a>
+            </div>
+
+            <div class="categorie0">
+                <a href="#"> 
+                    <img src="images/Organiseren-en-plannen.svg" alt="methode Organiseren en Plannen">
+                    <span class="categorietekst">Organiseren en plannen</span>
+                </a>
+            </div>
+
+            <div class="categorie0">
+                <a href="#"> 
+                    <img src="images/communiceren-en-presenteren.svg" alt="methode Communiceren en Presenteren">
+                    <span class="categorietekst">Communiceren en presenteren</span>
+                </a>
+            </div>
+
+            <div class="categorie0">
+                <a href="#"> 
+                    <img src="images/leren-over-anderen.svg" alt="methode Leren over anderen">
+                    <span class="categorietekst">Leren over anderen</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="filtersdesktop">    
+        <div class="categorie0">
+            <a href="#"> 
+                <img src="images/bekijk-alles.svg" alt="filter Bekijk alles">
+                <span class="categorietekst"> Bekijk alles</span>
+            </a>
+        </div>
+
+        <div class="categorie0">
+            <a href="#"> 
+                <img src="images/op-vraag.svg" alt="filter Op vraag">
+                <span class="categorietekst">Op vraag</span>
+            </a>
+        </div>
+
+        <div class="categorie0">
+            <a href="#"> 
+                <img src="images/leren-over-anderen.svg" alt="methode Leren over jezelf en reflecteren">
+                <span class="categorietekst">Leren over jezelf en reflecteren</span>
+            </a>
+        </div>
+
+        <div class="categorie0">
+            <a href="#"> 
+                <img src="images/onderzoeken-en-begrijpen.svg" alt="methode Onderzoeken en Begrijpen">
+                <span class="categorietekst">Onderzoeken en begrijpen</span>
+            </a>
+        </div>
+
+        <div class="categorie0">
+            <a href="#"> 
+                <img src="images/creatief-denken.svg" alt="methode Creatief denken">
+                <span class="categorietekst">Creatief denken</span>
+            </a>
+        </div>
+
+        <div class="categorie0">
+            <a href="#"> 
+                <img src="images/Organiseren-en-plannen.svg" alt="methode Organiseren en Plannen">
+                <span class="categorietekst">Organiseren en plannen</span>
+            </a>
+        </div>
+
+        <div class="categorie0">
+            <a href="#"> 
+                <img src="images/communiceren-en-presenteren.svg" alt="methode Communiceren en Presenteren">
+                <span class="categorietekst">Communiceren en presenteren</span>
+            </a>
+        </div>
+
+        <div class="categorie0">
+            <a href="#"> 
+                <img src="images/leren-over-anderen.svg" alt="methode Leren over anderen">
+                <span class="categorietekst">Leren over anderen</span>
+            </a>
+        </div>
+    </div>
+    
+
+    <!-- Dit is de gedeelte voor methode Leren over jezelf en Reflecteren met elke categorie  -->
+    <section class="categorieblok">  
+        <h2 class="tekenmethodetitel">Leren over jezelf en reflecteren</h2>
+
+            <div class="onderdeel">
+                <iframe src="https://www.youtube.com/embed/UQa9sK42OOM?si=2Yu6yzd6QD4hMmPI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+            </div>
+
+        <div class="categoriedeel"> 
+            <a href="#" class="onderdeel">
+                <img src="images/Roadmap.webp" alt="Roadmap">
+                <h3> Roadmap</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Cirkel_van_Gezichtspunt.webp" alt="Cirkel van gezichtspunten">
+                <h3> Cirkel van gezichtspunten</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/5jaar.webp" alt="5 jaar">
+                <h3> Over 5 jaar</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Diversiteitscirkel_.webp" alt="Diversiteitscirkel">
+                <h3> Diversiteitscirkel</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/kwaliteit-tekenen.webp" alt="Kwaliteit tekenen">
+                <h3> Kwaliteit tekenen</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Mijn_gebruiksaanwijzing.webp" alt="Mijn gebruiksaanwijzing">
+                <h3> Mijn gebruiksaanwijzing</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Stop-Start-Doorgaan.webp" alt="Stop Start Doorgaan">
+                <h3> Stop-Start Doorgaan</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Stroomschema.webp" alt="Stroomschema">
+                <h3> Stroomschema</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/reflecteren-op-een-situatie.webp" alt="Reflecteren op een situatie">
+                <h3> Reflecteren op een situatie</h3>
+            </a>
+
+            <div class="onderdeel">
+               <p class="turquoise">1. Welke methodes kan ik gebruiken om een reflectief vakproces visueel te maken?</p> 
+            </div>             
+
+            <a href="#" class="onderdeel">
+                <img src="images/Tijdcirkels.webp" alt="Hoe besteeed ik mijn tijd?">
+                <h3> Hoe besteeed ik mijn tijd?</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Studieplanning.webp" alt="Maak je eigen studieplanning">
+                <h3> Maak je eigen studieplanning</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Uitstelgedrag-uitstellen.webp" alt="Uitstelgedrag uitstellen">
+                <h3> Uitstelgedrag uitstellen</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Eerst-dacht-ik-nu-denk-ik.webp" alt="Eerst dacht ik nu denk ik">
+                <h3> Eerst dacht ik nu denk ik</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/batterij.webp" alt="Hoe vol is jouw batterij?">
+                <h3> Hoe vol is jouw batterij?</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Interne_Studiegenoten_.webp" alt="Interne studiegenoten">
+                <h3> Interne studiegenoten</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Mijn-ideaal.webp" alt="Een toekomst waarin alle kwaliteiten samenkomen">
+                <h3> Een toekomst waarin alle kwaliteiten samenkomen</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Waarden.webp" alt="Waarden verkennen">
+                <h3> Waarden verkennen</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Teamlead.webp" alt="Een team leiden">
+                <h3> Een team leiden</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Wiel-succes.webp" alt="Wiel van succes">
+                <h3> Wiel van succes</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Staafdiagram-competenties.webp" alt="Competenties tekenen">
+                <h3> Competenties tekenen</h3>
+            </a>            
+
+            <div class="onderdeel">
+               <p class="turquoise">2. Welke methodes kan ik gebruiken om een reflectief vakproces visueel te maken?</p> 
+            </div>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Assessment_canvas.webp" alt="Assessment Canvas">
+                <h3> Assessment Canvas</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Duurzaamheid.webp" alt="Mijn kijk op duurzaamheid">
+                <h3> Mijn kijk op duurzaamheid</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Een_scène_.webp" alt="Teken de scène">
+                <h3> Teken de scène</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Common_ground_matrix.webp" alt="Common ground matrix">
+                <h3> Common ground matrix</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Cover_story.webp" alt="Cover van jouw afgelopen jaar">
+                <h3> Cover van jouw afgelopen jaar</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Scenario.webp" alt="Een scenario van keuzes en gevolgen">
+                <h3> Een scenario van keuzes en gevolgen</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Eindejaarsgesprek.webp" alt="Eindejaarsgesprek">
+                <h3> Eindejaarsgesprek</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Mijn_Functioneringsgesprek_.webp" alt="Mijn Functioneringsgesprek">
+                <h3> Mijn Functioneringsgesprek</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/SLB-canvas.webp" alt="Studieloopbaanbegeleidingsgesprek">
+                <h3> Studieloopbaan-begeleidingsgesprek</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Reflectie-op-project.webp" alt="Reflectie op project">
+                <h3> Reflectie op project </h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Teamcanvas.webp" alt="Teamcanvas">
+                <h3> Teamcanvas</h3>
+            </a>
+
+            <div class="onderdeel">
+               <p class="turquoise">3. Welke methodes kan ik gebruiken om een reflectief vakproces visueel te maken?</p> 
+            </div>  
+
+            <a href="#" class="onderdeel">
+                <img src="images/Teamuitdaging.webp" alt="Teamuitdaging">
+                <h3> Teamuitdaging</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Cirkeloefening.webp" alt="Cirkeloefening">
+                <h3> Cirkeloefening</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Schets-ontwikkeling.webp" alt="Schets je ontwikkeling">
+                <h3> Schets je ontwikkeling</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/wat-houdt-me-af.webp" alt="Wat leidt me af?">
+                <h3> Wat leidt me af?</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Piek-daltekeningen.webp" alt="Piek en dal tekeningen">
+                <h3> Piek en dal tekeningen</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Retrospect.webp" alt="Retrospect">
+                <h3> Retrospect</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/tekenen-spelen-delen.webp" alt="Tekenen, spelen, delen">
+                <h3> Tekenen, spelen, delen</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Feedback-gwc.webp" alt="Feedback geven en ontvangen">
+                <h3> Feedback geven en ontvangen</h3>
+            </a>
+            
+            <a href="#" class="onderdeel">
+                <img src="images/Schoolloopbaan.webp" alt="Schoolloopbaan in kaart">
+                <h3> Schoolloopbaan in kaart</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Feedback-in-4-stappen.webp" alt="Feedback in 4 stappen">
+                <h3> Feedback in 4 stappen</h3>
+            </a>
+
+            <a href="#" class="onderdeel">
+                <img src="images/Johar.webp" alt="Feedback aan de hand van het Johari venster">
+                <h3> Feedback aan de hand van het Johari venster</h3>
+            </a>       
+            
+            <div class="onderdeel">
+               <p class="turquoise">4. Welke methodes kan ik gebruiken om een reflectief vakproces visueel te maken?</p> 
+            </div>             
+
+            <a href="#" class="onderdeel">
+                <img src="images/Werkwijze_in_kaart.webp" alt="Breng je werkwijze in kaart">
+                <h3> Breng je werkwijze in kaart</h3>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="categorieblok">  
+        <h2 class="categorietitel">Onderzoeken en begrijpen</h2>
+
+            <div class="onderdeel">
+                <iframe src="https://www.youtube.com/embed/yr-rRMElLFg?si=1t9RftEkInadEPQ9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+            </div>
+    
+            <div class="categoriedeel"> 
+                <a href="#" class="onderdeel">
+                    <img src="images/Roadmap.webp" alt="Roadmap">
+                    <h3> Roadmap</h3>
+                </a>
+
+                <a href="#" class="onderdeel">
+                    <img src="images/Metaforen_.webp" alt="Metafoor">
+                    <h3> Metafoor</h3>
+                </a>
+
+                <a href="#" class="onderdeel">
+                    <img src="images/Sketchnote-muur.webp" alt="Sketchnote op de muur">
+                    <h3> Sketchnote op de muur</h3>
+                </a>                
+
+                <a href="#" class="onderdeel">
+                    <img src="images/Context_map.webp" alt="Context map">
+                    <h3> Context map</h3>
+                </a>
+            
+                <a href="#" class="onderdeel">
+                    <img src="images/Duurzaamheid.webp" alt="Mijn kijk op duurzaamheid">
+                    <h3> Mijn kijk op duurzaamheid</h3>
+                </a>
+
+                <a href="#" class="onderdeel">
+                    <img src="images/Mindmap.webp" alt="Mindmap">
+                    <h3> Mindmap</h3>
+                </a>
+
+                <a href="#" class="onderdeel">
+                    <img src="images/Een_praatplaat.webp" alt="Een gezamelijke praatplaat">
+                    <h3> Een gezamelijke praatplaat</h3>
+                </a>    
+                
+                <a href="#" class="onderdeel">
+                    <img src="images/leidt-me-af.webp" alt="Wat leidt me af?">
+                    <h3> Wat leidt me af?</h3>
+                </a>
+                
+                <a href="#" class="onderdeel">
+                    <img src="images/Sketchnote.webp" alt="Sketchnote">
+                    <h3> Sketchnote</h3>
+                </a>                
+
+                <div class="onderdeel">
+                  <p class="red">Welke methodes kan ik gebruiken om een reflectief vakproces visueel te maken?</p> 
+                </div> 
+
+                <a href="#" class="onderdeel">
+                    <img src="images/Presentatie.webp" alt="Presentatie">
+                    <h3> Presentatie</h3>
+                </a>
+
+                <a href="#" class="onderdeel">
+                    <img src="images/Analytisch-tekenen.webp" alt="Analytisch tekenen">
+                    <h3> Analytisch tekenen</h3>
+                </a>
+
+                <a href="#" class="onderdeel">
+                    <img src="images/Schoolloopbaan.webp" alt="Schoolloopbaan in kaart">
+                    <h3> Schoolloopbaan in kaart</h3>
+                </a>
+            </div>
+    </section>
+
+
+    <!-- Hier kun je switchen van pagina om meer tekenmethodes te bekijken -->
+    <div class="paginanummer">
+        <ul>
+            <li class="activepage"> 1 </li>
+            <li><a href="#"> 2 </a></li>
+            <li> <a href="#"> 3 </a></li>
+        </ul>
+    </div>    
+
+
+</main>
+    
+<footer>
+
+    <!-- Dit is de bovenkant van de footer met logo en social icons -->
+    <div class="footerbovenkant">
+        <a href="index.html"><img src="images/logo-visual-thinking.svg" class="logo" alt="Logo Visual Thinking"></a>
+
+        <ul class="social-icons">
+            <li><a href="https://www.instagram.com/charley_muhren/" target="_blank"> <img src="images/instagram_vector.svg" alt="Sociale Media icon Instagram"></a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLjrep0WCM97y9fznRYBVVKyDkzlT9fWEa" target="_blank"><img src="images/youtube_vector.svg" alt="Sociale Media icon YouTube"></a></li>
+            <li><a href="https://www.linkedin.com/in/charleymuhren/" target="_blank"><img src="images/linkedln_vector.svg" alt="Sociale Media icon Linkedln"></a></li>
+        </ul>
+    </div>
+
+    <!-- Navigatiemenu in de footer op mobile -->    
+    <div class="menufooter">
+        <details>
+            <summary> 
+                <span>Oefenen </span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" width="12px" aria-hidden="true"><path d="M10.914 17.799c.6.611 1.572.612 2.172 0l7.964-8.127c.6-.613.6-1.605 0-2.217l-.724-.738a1.515 1.515 0 0 0-2.172 0L12 12.997l-6.154-6.28a1.514 1.514 0 0 0-2.172 0l-.724.738a1.59 1.59 0 0 0 0 2.217z"></path></svg>
+            </summary>
+                <p><a href="tekenmethodes.html"> Tekenmethodes</a></p>
+                <p> <a href="#Curussen">Curussen</a></p>
+        </details>
+
+        <details>
+            <summary> 
+                <span>Verdiepen </span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" width="12px" aria-hidden="true"><path d="M10.914 17.799c.6.611 1.572.612 2.172 0l7.964-8.127c.6-.613.6-1.605 0-2.217l-.724-.738a1.515 1.515 0 0 0-2.172 0L12 12.997l-6.154-6.28a1.514 1.514 0 0 0-2.172 0l-.724.738a1.59 1.59 0 0 0 0 2.217z"></path></svg>
+            </summary>
+                <p> <a href="#Kennisclips">Kennisclips</a></p>
+                <p><a href="#Artikelen"> Artikelen</a></p>
+        </details>
+
+        <details >
+            <summary> 
+                <span>Inspiratie</span>
+            </summary>
+        </details>
+
+        <details>
+            <summary> 
+                <span>Over </span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" width="12px" aria-hidden="true"><path d="M10.914 17.799c.6.611 1.572.612 2.172 0l7.964-8.127c.6-.613.6-1.605 0-2.217l-.724-.738a1.515 1.515 0 0 0-2.172 0L12 12.997l-6.154-6.28a1.514 1.514 0 0 0-2.172 0l-.724.738a1.59 1.59 0 0 0 0 2.217z"></path></svg>
+            </summary>
+                <p><a href="#Community"> Community</a></p>
+        </details>
+    </div> 
+
+    <div class="menufooterdesktop">
+        <div class="onderwerp">
+            <h2>Oefenen</h2>
+            <p><a href="tekenmethodes.html">Tekenmethodes</a></p>
+            <p><a href="#Curussen">Cursussen</a></p>
+        </div>
+
+        <div class="onderwerp">
+            <h2> Verdiepen</h2>
+            <p><a href="#Kennisclips">Kennisclips</a></p>
+            <p><a href="#Artikelen">Artikelen</a></p>
+        </div>
+
+        <div class="onderwerp">
+            <h2>Inspiratie</h2>
+        </div>
+
+        <div class="onderwerp">
+            <h2> Over</h2>
+            <p><a href="#Community">Community</a></p>
+        </div>
+    </div>
+
+
+    <!-- Onderkant van de footer met copyright tekst en ander tekst-->
+    <div class="footerend">
+        <p> &copy; 2026 Company Distributors. 
+            Designed & Developed by Charley Muhren</p>      
+        <ul class="ondermenu">
+            <li><a href="#Terms">Terms</a></li>
+            <li><a href="#Privacy">Privacy</a></li>
+            <li><a href="#Cookies">Cookies</a></li>
+        </ul>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
