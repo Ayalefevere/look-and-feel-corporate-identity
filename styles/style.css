@@ -246,13 +246,13 @@ nav {
 /* Dit is voor het stukje met de pagina's bovenaan */
 .paginas {
     margin-top: 40px;
-    font-size: 14px;
+    font-size: 16px;
     color: #1D194E;
 
     a, a:visited {
         color: #1D194E;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 16px;
 
         &:hover {
             color:#1D194E;
@@ -278,6 +278,9 @@ h1 {
     font-family: "rigid-square", sans-serif;
     font-weight: bold;
 
+    @media (min-width: 1024px) {
+        font-size: 48px;
+    }
 }
 
 /* Dit is voor de hele search balk */
@@ -293,7 +296,7 @@ h1 {
     
     /* Dit is de zoekbalk waar je kunt typen */
     .search-input, label {
-        font-size: 16px;
+        font-size: 20px;
         outline: none;
         border: none;
         flex-grow:1;
@@ -420,6 +423,7 @@ body:has(:popover-open) main {
         
         span {
             color: #1D194E;
+            font-size: 14px;
 
             @media (min-width: 1024px) {
                 font-size: 16px;
@@ -532,7 +536,7 @@ body:has(:popover-open) main {
             @media (min-width: 1024px){
                 justify-content: center;
                 height: 315px;
-                font-size: 18px;
+                font-size: 20px;
             }
         }
 
@@ -570,16 +574,16 @@ body:has(:popover-open) main {
             }
 
             h3 {
-                font-size: 14px;
                 margin-top:5px;
                 margin-bottom:5px;
                 color: #1D194E;
                 text-align: start;
                 font-family: "rigid-square", sans-serif;
+                font-size: 16px;
                 font-weight: bold;
 
                 @media (min-width: 1024px){
-                    font-size: 16px;
+                    font-size: 20px;
                 }
             }
         }
@@ -809,7 +813,7 @@ footer {
 
         summary {
             color: #FEB51E;
-            font-size: 23px;
+            font-size: 24px;
             font-family: "rigid-square", sans-serif;
             font-weight: bold;
             list-style: none;
@@ -855,8 +859,9 @@ display: none;
     right: 150px;
 
     h2 {
-        color: #FEB51E
+        color: #FEB51E;
         font-family: "rigid-square", sans-serif;
+        font-size: 24px;
     }
 
     a, a:visited {
