@@ -7,7 +7,7 @@ body {
     max-width: 80%;
     margin: 0 auto;
     padding: 0;
-    font-family: "Yrsa";
+    font-family: "Yrsa", 'Times New Roman';
     line-height: 1.4;
     overflow-x: hidden;
     background-color: #f5f5f5;
