@@ -7,7 +7,7 @@ body {
     max-width: 80%;
     margin: 0 auto;
     padding: 0;
-    font-family: "rigid-square", sans-serif;
+    font-family: "Yrsa";
     line-height: 1.4;
     overflow-x: hidden;
     background-color: #f5f5f5;
@@ -111,6 +111,7 @@ header {
         width: 180px;
         height: 55px;
         font-size: 16px;
+        font-family: "rigid-square", sans-serif;
 
         border: transparent;
         text-decoration: none;
@@ -193,6 +194,7 @@ nav {
         cursor: pointer;
         margin-top: 30px;
         font-size: 16px;
+        font-family: "rigid-square", sans-serif;
 
         &:hover {
             color: #F3F3F6;
@@ -205,6 +207,7 @@ nav {
         flex-direction: column;
 
         .kopje {
+            font-family: "rigid-square", sans-serif;
             font-weight: bold;
             color: #FEB51E;
             margin-bottom: 0;
@@ -214,12 +217,13 @@ nav {
 
         .tussenkopje {
             color: #F3F3F6;
+            font-weight: normal;
         }
 
         a, a:visited {
             text-decoration: none;
             font-size: 20px;
-            font-family: "rigid-square";
+            font-family: "rigid-square", sans-serif;
             font-weight: bold;
             text-align: start;
 
@@ -271,6 +275,9 @@ nav {
 h1 {
     margin-top: 40px;
     color: #1D194E;
+    font-family: "rigid-square", sans-serif;
+    font-weight: bold;
+
 }
 
 /* Dit is voor de hele search balk */
@@ -487,6 +494,7 @@ body:has(:popover-open) main {
             display: flex;
             align-items: center;    
             justify-content: center;  
+            font-family: "rigid-square", sans-serif;
 
             @media (min-width: 1024px){
             justify-content: left;  
@@ -518,6 +526,8 @@ body:has(:popover-open) main {
             text-align: center;
             align-items: center;
             font-size: 16px;
+            font-family: "rigid-square", sans-serif;
+            font-weight: bold;
 
             @media (min-width: 1024px){
                 justify-content: center;
@@ -561,11 +571,12 @@ body:has(:popover-open) main {
 
             h3 {
                 font-size: 14px;
-                font-weight: bold;
                 margin-top:5px;
                 margin-bottom:5px;
                 color: #1D194E;
                 text-align: start;
+                font-family: "rigid-square", sans-serif;
+                font-weight: bold;
 
                 @media (min-width: 1024px){
                     font-size: 16px;
@@ -799,6 +810,7 @@ footer {
         summary {
             color: #FEB51E;
             font-size: 23px;
+            font-family: "rigid-square", sans-serif;
             font-weight: bold;
             list-style: none;
             display: flex;
@@ -844,6 +856,7 @@ display: none;
 
     h2 {
         color: #FEB51E
+        font-family: "rigid-square", sans-serif;
     }
 
     a, a:visited {
