@@ -553,6 +553,7 @@ body:has(:popover-open) main {
             text-decoration: none;
             display: flex;
             flex-direction: column;
+            min-width: 0;
 
             &:hover {
                background-color: #ECEBF1;
