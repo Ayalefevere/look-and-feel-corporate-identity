@@ -57,7 +57,7 @@ header {
     @media (min-width: 1024px) {
     .navdesktop {
         display: flex;
-        gap: 50px;
+        gap: 60px;
         list-style: none;
         align-items: center;
         }
