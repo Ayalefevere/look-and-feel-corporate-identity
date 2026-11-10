@@ -598,14 +598,12 @@ body:has(:popover-open) main {
         /* Het lukt mij niet om deze te nesten bij waar die eigenlijk hoort dus daarom onderaan. */
         .tekenmethodeblok:nth-of-type(1) .tekenmethodetitel {
             background-color: #019da7;
-
-            @media (min-width: 1024px){
-                margin-top: 50px;
-            }
+            margin-top: 50px;
         }
 
        .tekenmethodeblok:nth-of-type(2) .tekenmethodetitel {
             background-color: #d04925;
+            margin-top: 50px;
 
             @media (min-width: 1024px){
                 margin-top: 100px;
