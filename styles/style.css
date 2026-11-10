@@ -633,6 +633,7 @@ body:has(:popover-open) main {
 
             &:hover {
                 border-bottom: none;
+                background-color: transparent;        
             }
 
             @media (min-width: 1024px){
@@ -653,7 +654,8 @@ body:has(:popover-open) main {
             grid-column: 1 / 3; 
             
             &:hover {
-                border-bottom: none;              
+                border-bottom: none;  
+                background-color: transparent;        
             }            
             
             @media (min-width: 1024px){
@@ -675,7 +677,8 @@ body:has(:popover-open) main {
         grid-column: 1 / -1;  
 
             &:hover {
-                border-bottom: none;             
+                border-bottom: none;     
+                background-color: transparent;        
             }        
         
             @media (min-width: 1024px){
@@ -704,7 +707,8 @@ body:has(:popover-open) main {
             grid-column: 1 / -1;   
 
             &:hover {
-                border-bottom: none;              
+                border-bottom: none;     
+                background-color: transparent;        
             }            
         
             @media (min-width: 1024px){
