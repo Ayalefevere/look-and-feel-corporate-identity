@@ -759,7 +759,7 @@ footer {
 
     @media (min-width: 1024px){
         position: absolute;
-        left: 150px;
+        left: 200px;
         row-gap: 10px;
     }
 
@@ -857,7 +857,7 @@ display: none;
     display: flex;
     gap: 100px;
     position: absolute;
-    right: 150px;
+    right: 200px;
 
     h2 {
         color: #FEB51E;
@@ -886,7 +886,7 @@ display: none;
         color: #F3F3F6;
 
             @media (min-width: 1024px){
-                width: 80%;
+                width: 75%;
                 margin: 0 auto;
                 margin-top: 350px;
                 display: flex;
