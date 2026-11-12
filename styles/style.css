@@ -305,8 +305,6 @@ h1 {
     .searchicon2 {
         width: auto;
         height: 20px;
-        color: #1D194E;
-        fill: currentColor;
     }
 
     .search-input::placeholder {
@@ -426,7 +424,7 @@ body:has(:popover-open) main {
                 font-size: 16px;
             }
         }
-        }
+    }
     
 
         /* Dit is de styling voor de tekst underline van alle tekenmethodes */
