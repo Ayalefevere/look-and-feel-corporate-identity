@@ -846,11 +846,6 @@ footer {
             }
         }
 
-        details {
-            font-size: 16px;
-            color: #F3F3F6;
-        }
-
         a, a:visited {
             color: var(--grey-light);
             text-decoration: none;
