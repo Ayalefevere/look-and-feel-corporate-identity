@@ -819,14 +819,19 @@ footer {
             display: flex;
             justify-content: space-between;
 
+            &:hover {
+                color: var(--yellow-dark);
+            }
+
+            .koppie, .koppie:visited {
+                color: var(--yellow-light);
+                font-size: 24px;                
+            }
+
             svg {
                 fill: var(--yellow-light);
                 width: 25px;
                 height: auto;
-            }
-
-            &:hover {
-                color: var(--yellow-dark);
             }
         }
 
@@ -854,6 +859,11 @@ display: none;
         color: var(--yellow-light);
         font-family: "rigid-square", Arial, Helvetica, sans-serif;
         font-size: 24px;
+
+        .kop, .kop:visited {
+            color: var(--yellow-light);
+            font-size: 24px;
+        }
     }
 
     a, a:visited {
