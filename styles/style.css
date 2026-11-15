@@ -632,11 +632,6 @@ body:has(:popover-open) main {
         .onderdeel:nth-child(10) {
             grid-column: 1 / -1;   
 
-            &:hover {
-                border-bottom: none;
-                background-color: transparent;        
-            }
-
             @media (min-width: 1024px){
                 grid-column: 1 / 3;
             }            
@@ -652,12 +647,7 @@ body:has(:popover-open) main {
         }
 
         .onderdeel:nth-child(22) {
-            grid-column: 1 / 3; 
-            
-            &:hover {
-                border-bottom: none;  
-                background-color: transparent;        
-            }            
+            grid-column: 1 / 3;          
             
             @media (min-width: 1024px){
                 grid-column: 3 / -1;
@@ -675,12 +665,7 @@ body:has(:popover-open) main {
         }
 
         .onderdeel:nth-child(34) {
-        grid-column: 1 / -1;  
-
-            &:hover {
-                border-bottom: none;     
-                background-color: transparent;        
-            }        
+        grid-column: 1 / -1;       
         
             @media (min-width: 1024px){
                 grid-column: 1 / 3;
@@ -705,12 +690,7 @@ body:has(:popover-open) main {
         }         
 
         .onderdeel:nth-child(46) {
-            grid-column: 1 / -1;   
-
-            &:hover {
-                border-bottom: none;     
-                background-color: transparent;        
-            }            
+            grid-column: 1 / -1;         
         
             @media (min-width: 1024px){
                 grid-column: 3 / -1;
