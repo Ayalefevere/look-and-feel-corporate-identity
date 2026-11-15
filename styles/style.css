@@ -311,6 +311,8 @@ h1 {
         flex-grow:1;
         background-color: var(--page);
         width: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .searchicon2 {
