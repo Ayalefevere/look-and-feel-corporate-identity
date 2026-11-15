@@ -1,3 +1,8 @@
+:root {
+    --onderdeel-hover: #ECEBF1;
+
+}
+
 /* FULL PAGE */
 
 * {
@@ -561,7 +566,7 @@ body:has(:popover-open) main {
             min-width: 0;
 
             &:hover:not(.geenhover) {
-               background-color: #ECEBF1;
+               background-color: var(--onderdeel-hover);
                border-bottom: 4px solid var(--yellow-light);
             }
 
@@ -901,7 +906,7 @@ display: none;
             }            
         }  
 
-        /* Voor de onderste 3 stukjes tekst */
+        /* Voor de onderste 3 stukjes tekst - linkjes */
         .ondermenu {
         list-style: none;
         display: flex;
