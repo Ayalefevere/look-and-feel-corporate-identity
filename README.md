@@ -26,10 +26,10 @@ Hier staat de website: https://ayalefevere.github.io/look-and-feel-corporate-ide
 
 Dit is het design voor de website van Visual Thinking. Op de website kunnen studenten en docenten leren om hun gedachten en doelen te verbeelden. De website bestaat (op dit moment) uit 2 pagina's: home en tekenmethodes. De home pagina hoeft op dit moment niet uitgewerkt worden. Alle pagina's hebben een header en footer. Op de tekenmethodes pagina kun je filteren op de tekenmethodes en daar kun je de categorieeën bekijken die daar bij horen. De website is responsive voor mobile en desktop. 
 
-**Mobile**
+**Mobile design**
 
 
-**Desktop**
+**Desktop design**
 
 
 
