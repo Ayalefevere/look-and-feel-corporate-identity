@@ -18,6 +18,8 @@ body {
     background-color: var(--light-accent);
 }
 
+h1, h2, h3 {
+    font-family: "rigid-square", Arial, Helvetica, sans-serif;
 }
 
 
@@ -283,7 +285,6 @@ nav {
 
 h1 {
     margin-top: 40px;
-    font-family: "rigid-square", Arial, Helvetica, sans-serif;
     color: var(--dark-accent);
     font-weight: bold;
 
@@ -520,7 +521,6 @@ h1 {
                 margin-bottom:5px;
                 color: var(--dark-accent);
                 text-align: start;
-                font-family: "rigid-square", Arial, Helvetica, sans-serif;
                 font-size: 16px;
                 font-weight: bold;
                 hyphens: auto;
@@ -863,7 +863,6 @@ display: none;
     right: 200px;
 
     h2 {
-        font-family: "rigid-square", Arial, Helvetica, sans-serif;
         color: var(--color-interactive-light);
         font-size: 24px;
 
