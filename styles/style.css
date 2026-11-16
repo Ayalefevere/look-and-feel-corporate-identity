@@ -442,8 +442,8 @@ h1 {
             height: 40px;
             display: flex;
             align-items: center;    
-            justify-content: center;  
-            font-family: "rigid-square", Arial, Helvetica, sans-serif;
+            justify-content: left;
+            padding-left: 10px;  
 
             @media (min-width: 1024px){
                 font-size: 24px;
@@ -909,7 +909,7 @@ display: none;
             white-space: pre-line;
             font-family: "Yrsa", 'Times New Roman', Times, serif;
 
-            @media (min-width: 1024px) {
+        @media (min-width: 1024px) {
                 white-space: normal;
             }            
         }  
