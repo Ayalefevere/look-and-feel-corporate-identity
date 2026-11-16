@@ -870,6 +870,7 @@ display: none;
         font-size: 24px;
 
         .kop, .kop:visited {
+            font-family: "rigid-square", Arial, Helvetica, sans-serif;
             color: var(--color-interactive-light);
             font-size: 24px;
         }
