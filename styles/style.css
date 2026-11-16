@@ -681,8 +681,8 @@ body:has(:popover-open) main {
 
 /* Filter button voor op de mobile */
 .filtericon {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background-color: var(--dark-accent);
     border-radius: 50px;
     display: flex;
