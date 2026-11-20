@@ -272,8 +272,9 @@ nav {
             text-decoration-color: var(--dark-accent);
         }
 
-        &:focus {
+        &:focus-visible {
             color: var(--color-interactive-light);
+            outline:none;
         }
     }    
 
