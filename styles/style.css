@@ -320,8 +320,15 @@ h1 {
         width: 100%;
         display: flex;
         align-items: center;
-        font-weight: normal;
-        font-family: "rigid-square", Arial, Helvetica, sans-serif;
+        color: var(--dark-accent);
+        font-family: "Quantico", Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+
+    .search-input[type="search"] {
+        color: var(--dark-accent);
+        font-family: "Yrsa", 'Times New Roman', Times, serif;
+        font-weight: 100;
     }
 
     .searchicon2 {
