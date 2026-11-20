@@ -645,7 +645,7 @@ h1 {
             }           
         }
 
-    /* Ga ik waarschijnlijk niet gebruiken dus daarom verborgen  */
+    /* Ga ik waarschijnlijk NIET gebruiken dus daarom verborgen  */
     /* Dit is de paginanummering zodat je naar meer methodes kan switchen        */
     .paginanummer ul {
         display: flex;
