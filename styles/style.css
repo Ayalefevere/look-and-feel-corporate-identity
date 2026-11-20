@@ -246,7 +246,7 @@ nav {
 /* MAIN */
 
 /* Tijdelijk voor op de home pagina */
-.tijdelijk, a, a:visited {
+.tijdelijk, .tijdelijk:visited {
     font-family: "Yrsa", 'Times New Roman', Times, serif;
     color: var(--dark-accent);
     text-decoration: underline;
