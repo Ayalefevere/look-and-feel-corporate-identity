@@ -329,7 +329,8 @@ h1 {
         color: var(--dark-accent);
         font-family: "Quantico", Arial, Helvetica, sans-serif;
         font-weight: 100;
-    }
+        margin-left: 5px;
+    } 
 
     .searchicon2 {
         width: auto;
