@@ -311,7 +311,7 @@ h1 {
     
     
     /* Dit is de zoekbalk waar je kunt typen */
-    .search-input, label {
+    input, label {
         font-size: 20px;
         outline: none;
         border: none;
@@ -325,7 +325,7 @@ h1 {
         font-weight: 700;
     }
 
-    .search-input[type="search"] {
+   input[type="search"] {
         color: var(--dark-accent);
         font-family: "Yrsa", 'Times New Roman', Times, serif;
         font-weight: 100;
