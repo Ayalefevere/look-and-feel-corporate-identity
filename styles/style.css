@@ -703,7 +703,7 @@ body:has(:popover-open) main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
     cursor: pointer;
     z-index: 1;
 
