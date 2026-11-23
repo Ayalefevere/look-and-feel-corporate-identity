@@ -47,6 +47,7 @@ header {
         display: none;
     }
 
+    /* Dit is voordat het logo en navigatiemenu naast elkaar zit*/
     @media (min-width: 1024px) {
         margin-left: 170px;
         display: flex;
@@ -352,8 +353,8 @@ h1 {
     }
 }
 
-    /* Filters layout op desktop */
-    .filtersdesktop {
+/* Filters layout op desktop */
+.filtersdesktop {
     display: none;
 
     @media (min-width: 1024px) {
@@ -364,7 +365,7 @@ h1 {
         row-gap: 40px;
         margin-left: 20px;
     }
-    }
+}
 
     /* Design van de filters onderwerpen zelf op mobile en desktop */
     .categorie0 {
@@ -396,7 +397,7 @@ h1 {
     }
     
 
-        /* Dit is de styling voor de tekst underline van alle tekenmethodes */
+        /* Dit is de styling voor de tekst underline van alle tekenmethodes in de filters */
         .categorie0 img:hover {
             transform: translateY(-2px); 
             transition: transform 0.2s ease;
@@ -553,8 +554,6 @@ h1 {
         }
     }
 
-  
-        /* Het lukt mij niet om deze te nesten bij waar die eigenlijk hoort dus daarom onderaan. */
         .tekenmethodeblok:nth-of-type(1) .tekenmethodetitel {
             background-color: var(--color-theme-01-dark);
             margin-top: 50px;
@@ -823,7 +822,7 @@ footer {
         }
         }
     }
-}
+    }
 
     /* Het menu in de footer op mobile       */
     .menufooter {
@@ -876,39 +875,40 @@ footer {
         }
     }      
 
-.menufooterdesktop {
-display: none;
+    /* Het menu in de footer op desktop       */
+    .menufooterdesktop {
+    display: none;
 
-@media (min-width: 1024px) {
-    display: flex;
-    gap: 100px;
-    position: absolute;
-    right: 200px;
+    @media (min-width: 1024px) {
+        display: flex;
+        gap: 100px;
+        position: absolute;
+        right: 200px;
 
-    h2 {
-        color: var(--color-interactive-light);
-        font-size: 24px;
-
-        .kop, .kop:visited {
-            font-family: "Quantico", Arial, Helvetica, sans-serif;
+        h2 {
             color: var(--color-interactive-light);
             font-size: 24px;
+
+            .kop, .kop:visited {
+                font-family: "Quantico", Arial, Helvetica, sans-serif;
+                color: var(--color-interactive-light);
+                font-size: 24px;
+            }
+        }
+
+        a, a:visited {
+            text-decoration: none;
+            color: var(--color-neutral-light);
+            font-size: 16px;
+            font-family: "Yrsa", 'Times New Roman', Times, serif;
+
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
-
-    a, a:visited {
-        text-decoration: none;
-        color: var(--color-neutral-light);
-        font-size: 16px;
-        font-family: "Yrsa", 'Times New Roman', Times, serif;
-
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
-}
-}
 
     .footerend {
         display:flex;
