@@ -317,7 +317,7 @@ h1 {
 
     /* Dit is de zoekbalk waar je kunt typen */
     input, label {
-        font-size: 20px;
+        font-size: 18px;
         outline: none;
         border: none;
         flex-grow:1;
@@ -328,6 +328,10 @@ h1 {
         color: var(--dark-accent);
         font-family: "Quantico", Arial, Helvetica, sans-serif;
         font-weight: 700;
+
+        @media (min-width: 1024px) {
+            font-size: 20px;
+        }   
     }
 
    input[type="search"] {
