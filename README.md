@@ -36,7 +36,11 @@ Dit is het design voor de website van Visual Thinking. Op de website kunnen stud
 Hier staat de website: https://ayalefevere.github.io/look-and-feel-corporate-identity/
 
 ## Veranderingen
-- 
+- Kleuren contrast verbeterd
+- Desktop design gemaakt
+- Tekeningen in de filters gezet
+- Filtericon in de linkerhoek gezet en laten meescrollen op mobile
+- Heading font veranderd
 
 
 ## Kenmerken
