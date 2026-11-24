@@ -40,6 +40,7 @@ Hier staat de website: https://ayalefevere.github.io/look-and-feel-corporate-ide
 - Desktop design gemaakt
 - Tekeningen in de filters gezet
 - Filtericon in de linkerhoek gezet en laten meescrollen op mobile
+- Achtergrond een blur gegeven als de filters en hamburgermenu open zijn zodat het minder druk is.
 - Heading font veranderd
 
 
