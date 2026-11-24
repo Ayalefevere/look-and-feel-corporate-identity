@@ -589,6 +589,8 @@ h1 {
             @media (min-width: 1024px){
                 grid-column: 3 / -1;
                 grid-row: span 2;
+                justify-content: space-between; 
+                height: 100%;
             }
         }
 
@@ -606,6 +608,8 @@ h1 {
             @media (min-width: 1024px){
                 grid-column: 1 / 3;
                 grid-row: 6 / 8;
+                justify-content: space-between; 
+                height: 100%;
             }
         }
 
@@ -624,6 +628,8 @@ h1 {
             @media (min-width: 1024px){
                 grid-column: 3 / -1;
                 grid-row: span 2;
+                justify-content: space-between; 
+                height: 100%;
             }            
         }
 
@@ -641,11 +647,12 @@ h1 {
             @media (min-width: 1024px){
                 grid-column: 1 / 3;
                 grid-row: 14 / 16;
+                justify-content: space-between; 
+                height: 100%;
             }            
         }    
 
         .onderdeel:nth-child(45) {           
-       
             @media (min-width: 1024px){
                 grid-column: 2 / 3;
                 grid-row: 16 / 17;
