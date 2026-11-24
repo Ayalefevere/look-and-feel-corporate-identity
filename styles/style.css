@@ -862,11 +862,27 @@ footer {
                 font-family: "Quantico", Arial, Helvetica, sans-serif;
             }
 
-            svg {
+            .icon-close {
                 fill: var(--color-interactive-light);
                 width: 25px;
                 height: auto;
             }
+
+            .icon-open {
+                transform: rotate(180deg);
+                fill: var(--color-interactive-light);
+                width: 25px;
+                height: auto;                
+                display: none;
+            }
+        }
+
+        details[open] .icon-close {
+            display: none;
+        }
+
+        details[open] .icon-open {
+            display: block;
         }
 
         a, a:visited {
