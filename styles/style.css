@@ -297,6 +297,7 @@ nav {
 
 h1 {
     margin-top: 50px;
+    margin-bottom: 0;
     color: var(--dark-accent);
     font-weight: bold;
 
