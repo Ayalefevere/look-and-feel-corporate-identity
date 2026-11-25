@@ -762,7 +762,7 @@ body:has(:popover-open) main {
     padding-top: 30px;
     z-index: 1;
     position: fixed;
-    top: 15vh;
+    top: 15%;
     left:0;
     right: 0;
     bottom: 0;
