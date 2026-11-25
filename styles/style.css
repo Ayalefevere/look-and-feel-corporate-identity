@@ -404,15 +404,27 @@ h1 {
                 font-size: 16px;
             }
         }
+
+        a, a:visited {
+            text-decoration: none;
+            font-size: 13px;
+            text-align: center;
+            justify-items: center;
+            border: 1px solid transparent;
+            padding: 10px;
+        }
+
+        a:hover {
+            transform: translateY(-2px); 
+            transition: transform 0.2s ease;
+            border: 1px solid var(--lightdark-accent);
+            border-radius: 5%;
+            padding: 10px;
+        }
     }
     
 
-        /* Dit is de styling voor de tekst underline van alle tekenmethodes in de filters */
-        .categorie0 img:hover {
-            transform: translateY(-2px); 
-            transition: transform 0.2s ease;
-        }        
-        
+        /* Dit is de styling voor de tekst underline van alle tekenmethodes in de filters */        
         .categorietekst:hover {
             text-decoration: underline;
             text-decoration-thickness: 1.5px;
@@ -448,13 +460,6 @@ h1 {
 
         .categorie0:nth-of-type(8) a span {
             text-decoration-color: var(--color-theme-06-dark);
-        }
-
-        a, a:visited {
-            text-decoration: none;
-            font-size: 13px;
-            text-align: center;
-            justify-items: center;
         }
     
 
