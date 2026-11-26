@@ -9,12 +9,16 @@
 }
 
 body {
-    max-width: 80%;
     margin: 0 auto;
     padding: 0;
     line-height: 1.4;
     overflow-x: hidden;
     background-color: var(--light-accent);
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
 }
 
 h1, h2, h3 {
@@ -31,20 +35,17 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    margin-left: -100px;
-    margin-right: -100px;
     border-bottom: 1px solid var(--color-neutral-normal);
+    padding-left: 10%;
+    padding-right: 10%;
 
     @media (min-width: 1024px){
-        margin-left: -170px;
-        margin-right: -170px;
         height: 100px;
         border-bottom: 1px solid var(--color-neutral-normal);
     }    
 }
 
 .leftheader {
-    margin-left: 100px;
 
     .navdesktop {
         display: none;
@@ -52,7 +53,6 @@ header {
 
     /* Dit is voordat het logo en navigatiemenu naast elkaar zit*/
     @media (min-width: 1024px) {
-        margin-left: 170px;
         display: flex;
     }
 
@@ -98,10 +98,8 @@ header {
 .rightheader {
     display: flex;
     gap: 20px;
-    margin-right: 100px;
 
     @media (min-width: 1024px) {
-        margin-right: 170px;
         align-items: center;
         gap: 30px;
     }    
