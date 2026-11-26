@@ -53,12 +53,18 @@ Dit is het design voor de website van Visual Thinking. Op de website kunnen stud
 Hier staat de website: https://ayalefevere.github.io/look-and-feel-corporate-identity/
 
 ## Veranderingen
-- Kleuren contrast verbeterd
-- Desktop design gemaakt
-- Tekeningen in de filters gezet
-- Filtericon in de linkerhoek gezet en laten meescrollen op mobile
-- Achtergrond een blur gegeven als de filters en hamburgermenu open zijn zodat het minder druk is.
-- Heading font veranderd
+- Achtergrondkleur van de pagina veranderd.
+- Hoofdletters weggehaald zodat alleen aan het begin van de zin een hoofdletter zit.
+- Heading font veranderd van Riqid Square naar Quantico.
+- Achtergrondkleur en tekst kleur veranderd van de tekenmethode titel en tekstblok met de vraag/quote. Voor beter kleurencontrast.
+- Filtericon laten meescrollen.
+- Als de filters popover open is, de popover over de gehele breedte van het scherm en achtergrond een blur gegeven zodat je minder achtergrond ziet en het minder druk is.
+- Tekeningen in de filters gezet.
+- Desktop design gemaakt.
+- Lay-out switchen bij herhalend patroon in de grid van de tekenmethodes op desktop.
+- Meerdere tesktvlakken (met vraag) in de grid gezet na ongeveer 11 categorieeën in de tekenmethodes grid.
+- Hover veranderd/toegevoegd aan de categorieeën in de tekenmethodes grid.
+
 
 
 ## Kenmerken
@@ -69,16 +75,16 @@ Hier staat de website: https://ayalefevere.github.io/look-and-feel-corporate-ide
 
 **HTML**
 In de header staat de bovenkant van de pagina. Hierin staat het logo, navigatiemenu en icoontjes met een zoek optie voor de hele website, profile icon, favoriete en een button om materiaal te uploaden.
+- Hamburger menu is met JavaScript gedaan.
 
 In de main staat alle informatie over de pagina. Tekenmethodes pagina de zoekbalk, tekenmethodes filtering en de tekenmethodes met categorieën zelf.
+- Voor de tekenmethodes is grid gebruikt.
 
 In de footer staat logo, sociale media icons, menu en copyright tekst.
 
 **CSS**
 Alles is belangrijk, want anders kan ik mijn layout niet maken.
-
-
-
+De stylesheet die ik heb gemaakt in een groepje is een CSS bestand en is gelinkt in de HTML voor de custom properties kleuren en fonts.
 
 
 ## Licentie
