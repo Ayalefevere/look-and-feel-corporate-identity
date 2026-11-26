@@ -187,14 +187,13 @@ nav {
 
     .sluit-button {
         padding-top: 20px;
-        padding-right: 10px;
-        display: flex;
-        justify-content: end;
-        width: 85%;
         cursor: pointer;
+        position: relative;
+        left: 70%;
 
         img {
             width: 25px;
+            height: auto;
         }
     }
 
