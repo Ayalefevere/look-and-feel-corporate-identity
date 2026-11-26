@@ -774,7 +774,7 @@ body:has(:popover-open) main {
 
     .close-button {
         position: relative;
-        left: 95%;
+        left: 90%;
         cursor: pointer;
         margin-bottom: 30px;
 
