@@ -743,7 +743,7 @@ body:has(:popover-open) main {
     z-index: 1;
 
     position: sticky;
-    bottom:3%;
+    bottom: 3%;
 
     @media (min-width: 1024px) {
         display: none;
@@ -775,15 +775,14 @@ body:has(:popover-open) main {
     width: 100%;
 
     .close-button {
-        display: flex;
-        justify-content: end;
-        width: 100%;
-        padding-bottom: 30px;
-        padding-right: 0;
+        position: relative;
+        left: 95%;
         cursor: pointer;
+        margin-bottom: 30px;
 
         img {
             width: 25px;
+            height: auto;
         }
     }
 
